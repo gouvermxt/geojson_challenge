@@ -1,6 +1,8 @@
+require 'rgeo/geo_json'
+
 # Reads the list of geographical areas in GeoJSON format
 class GeoAreas
-  DATA_FILE = 'Given_areas.json'.freeze
+  DATA_FILE = 'app/services/Given_areas.json'.freeze
 
   def as_hash
     features.map { |feature| RGeo::GeoJSON.encode(feature) }
@@ -13,7 +15,9 @@ class GeoAreas
   private
 
   def features
-    @features ||= File.open(DATA_FILE) do |file|
+    file_location = Rails.root.join(DATA_FILE)
+
+    @features ||= File.open(file_location) do |file|
       RGeo::GeoJSON.decode(file.read)
     end
   end
