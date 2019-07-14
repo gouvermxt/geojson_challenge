@@ -35,6 +35,11 @@ group :development, :test do
   gem 'byebug', platform: :mri
   # RSpec for Rails-3+
   gem 'rspec-rails', '~> 3.8'
+  # A fake filesystem. Use it in your tests.
+  gem "fakefs", require: "fakefs/safe"
+  # Support vscode debug
+  gem 'ruby-debug-ide'
+  gem 'debase'
 end
 
 group :development do
