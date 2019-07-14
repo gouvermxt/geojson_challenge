@@ -5,7 +5,7 @@ class GeoAreas
   DATA_FILE = 'app/services/Given_areas.json'.freeze
 
   def as_hash
-    features.map { |feature| RGeo::GeoJSON.encode(feature) }
+    RGeo::GeoJSON.encode(features)
   end
 
   def as_geometry
