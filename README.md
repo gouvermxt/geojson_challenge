@@ -1,24 +1,31 @@
-# README
+# geojson_challenge
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+geojson_challenge
 
-Things you may want to cover:
+### Requirements
 
-* Ruby version
+- [Ruby 2.6](https://www.ruby-lang.org)
 
-* System dependencies
+-[GEOS lib](https://trac.osgeo.org/geos/)
 
-* Configuration
+### Setup
 
-* Database creation
+- Open a terminal in the project's root folder
 
-* Database initialization
+- Run `bin/bundle` to install the gems
 
-* How to run the test suite
+### Run
 
-* Services (job queues, cache servers, search engines, etc.)
+- Open a terminal in the project's root folder
 
-* Deployment instructions
+- Run `bin/rails s`
 
-* ...
+- The API will be available on <http://localhost:3000>
+
+- Checkout the [API Docs](https://documenter.getpostman.com/view/1027148/SVSKKnyc)
+
+### Test
+
+- Open a terminal in the project's root folder
+
+- Run `bin/bundle exec rspec`
