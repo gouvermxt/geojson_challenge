@@ -6,7 +6,9 @@ module ApiExceptionHandler
     rescue_from StandardError, with: :bad_request
   end
 
-  def bad_request
+  def bad_request(e)
+    logger.error e
+
     render json: { 
       error: 'An unknow error happened. Please contact the system administrators.' 
     }, status: 500
