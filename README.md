@@ -6,7 +6,7 @@ geojson_challenge
 
 - [Ruby 2.6](https://www.ruby-lang.org)
 
--[GEOS lib](https://trac.osgeo.org/geos/)
+- [GEOS lib](https://trac.osgeo.org/geos/)
 
 ### Setup
 
