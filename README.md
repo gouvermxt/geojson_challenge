@@ -14,6 +14,8 @@ geojson_challenge
 
 - Run `bin/bundle` to install the gems
 
+- Run `bin/rails db:setup` to setup the database
+
 ### Run
 
 - Open a terminal in the project's root folder
